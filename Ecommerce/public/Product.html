@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="cart.html">
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/83cd0450bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="imeges/LOGO.png" width="200px" height="200px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div id="cart-wrap">
+                <a href="" class="fas fa-shopping-cart"></a>
+                <span id="cart"></span>
+            </div>
+              
+        </div>
+    </div>
+</div>
+
+
+
+        <h2 class="title">Products Available</h2>
+         
+    <div class="ken">
+        <input class="bar" type="text" id="searchbar" onkeyup="search()" name="search" placeholder="search for a product...">
+       
+        <select>
+            <option>Default sorting</option>
+            <option>sort by price</option>
+            <option>sort by popularity</option>
+            <option>sort by rating</option>
+            <option>sort by sale</option>
+        </select>
+    </div>
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="imeges/Naked.jpg">
+                <h4>Naked Wolfe</h4>
+                <div class="rating">
+                    <i class="fa fa-star" id="star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>KES 15000</p>
+                <button class="btn add-to-cart" data-product="Naked Wolfe" data-price="15000">Add to Cart</button>
+            </div>
+      
+            <div class="col-4">
+                <img src="imeges/Louis Vuitton AF1.jpg">
+                <h4>Louis Vuitton AF1</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>KES 3100</p>
+                <button class="btn add-to-cart" data-product="Louis Vuitton AF1" data-price="3100">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="imeges/Jordan 1 Retro Black Red.jpg">
+                <h4>Jordan 1 Retro Black Red</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>KES 2000</p>
+                <button class="btn add-to-cart" data-product="Jordan 1 Retro Black Red" data-price="2000">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="imeges/Red Cherry Blossom.jpg">
+                <h4>Red Cherry Blossom AF1's</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>KES 2,448</p>
+                <button class="btn add-to-cart" data-product="Red Cherry Blossom AF1's" data-price="2448">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="imeges/Neon Drip.jpg">
+                <h4>Neon Drip </h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>KES 4,041</p>
+                <button class="btn add-to-cart" data-product="Neon Drip" data-price="4041">Add to Cart</button>
+            </div>
+            <div class="col-4">
+                <img src="imeges/Nike Air Jordan XI.jpg">
+                <h4>Nike Air Jordan XI</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <p>KES 3,648</p>
+                <button class="btn add-to-cart" data-product="Nike Air Jordan XI" data-price="3648">Add to Cart</button>
+            </div>
+            <div class="col-4">
+            <img src="imeges/Bloody AF1's.jpg" height="200px">
+            <h4>Blood AF1's</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>KES 3,300</p>
+            <button class="btn add-to-cart" data-product="Blood AF1's" data-price="3300">Add to Cart</button>
+          </div>
+          <div class="col-4">
+            <img src="imeges/Kanagawa.jpg">
+            <h4>Kanagawa</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 2,000</p>
+            <button class="btn add-to-cart" data-product="Kanagawa" data-price="2000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Nike Air Jordan XIII.jpg">
+            <h4>Nike Air Jordan XIII</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 3,300</p>
+            <button class="btn add-to-cart" data-product="Nike Air Jordan XIII" data-price="3300">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Nike Air Jordan V.jpg">
+            <h4>Nike Air Jordan V</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 3,700</p>
+            <button class="btn add-to-cart" data-product="Nike Air Jordan V" data-price="3700">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Nike Air Jordan XIII Fusion.jpg">
+            <h4>Nike Air Jordan XIII Fusion</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 3,600</p>
+            <button class="btn add-to-cart" data-product="Nike Air Jordan XIII Fusion" data-price="3600">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Weed_420.jpg">
+            <h4>Weed/420</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 2,500</p>
+            <button class="btn add-to-cart" data-product="Wees/420" data-price="2500">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Wallabees.jpeg">
+            <h4>Wallabees</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 5,000</p>
+            <button class="btn add-to-cart" data-product="Wallabees" data-price="5000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Clog London.jpg">
+            <h4>Clog London</h4>
+            <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star"aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 4,500</p>
+            <button class="btn add-to-cart" data-product="Clog London" data-price="4500">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Hats of Acces.jpg">
+        <h4>Hats Of Acces</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 4,300</p>
+        <button class="btn add-to-cart" data-product="Hats of Acces" data-price="4300">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Hats of.jpg">
+        <h4>Hats Of Acces</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 4,100</p>
+        <button class="btn add-to-cart" data-product="Hats of Acces" data-price="4100">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/John karun.jpg">
+        <h4>John Karun</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 6,000</p>
+        <button class="btn add-to-cart" data-product="John Karun" data-price="6000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Luger.jpg">
+        <h4>Luger</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 2,800</p>
+        <button class="btn add-to-cart" data-product="Luger" data-price="2800">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Mutaqinoti.jpg">
+        <h4>Mutaqinoti</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 5,500</p>
+        <button class="btn add-to-cart" data-product="Mutaqinoti" data-price="5500">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Vespa Vita.jpg">
+        <h4>Vespa Vita</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 5,300</p>
+        <button class="btn add-to-cart" data-product="Vespa vita" data-price="5300">Add to Cart</button>
+        </div>
+        <div class="col-4">
+        <img src="imeges/Clarks Wallabees.jpg">
+        <h4>Clarks Wallabees</h4>
+        <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star"aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p>KES 2,100</p>
+        <button class="btn add-to-cart" data-product="Clarks Wallabees" data-price="2100">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Split Color.jpg">
+            <h4>Split Color</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 2,200</p>
+            <button class="btn add-to-cart" data-product="Split Color" data-price="2200">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Pigalle Custom AF1's.jpg">
+            <h4>Pigalle Custom</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 3,000</p>
+            <button class="btn add-to-cart" data-product="Pigalle Custom" data-price="3000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="imeges/Pigalle Custom AF1's (6).jpg">
+            <h4>Jordan 1 </h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 2,500</p>
+            <button class="btn add-to-cart" data-product="Jordan 1" data-price="2500">Add to Cart</button>
+        </div>
+        <dic class="col-4">
+            <img src="imeges/Converse kith 2018.jpg">
+            <h4>Converse Kith 2018</h4>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <p>KES 2,200</p>
+            <button class="btn add-to-cart" data-product="Converse Kith 2018" data-price="2200">Add to Cart</button>
+    </div>
+</div>
+<div class="footer">
+  
+    <hr>
+    <p class="copyright">Copyright 2023 KenethKyalo</p>
+       </div>
+</div>
+<script>
+let cart = [];
+      
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const cartIcon = document.querySelector("#cart-wrap .fa-shopping-cart");
+const cartCount = document.getElementById("cart");
+
+let itemCount = 0;
+let products = [];
+
+function updateCartCount() {
+  cartCount.textContent = itemCount;
+}
+
+function addToCart(product) {
+  itemCount++;
+  updateCartCount();
+  products.push(product);
+}
+
+addToCartButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const productName = button.getAttribute('data-product');
+            const productPrice = parseFloat(button.getAttribute('data-price'));
+
+   
+
+    const product = {
+      name: productName,
+      price: productPrice,
+    };
+
+    cart.push(product);
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(productName + '\nAdded To Cart');
+  });
+});
+addToCartButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const productName = button.parentNode.querySelector("h4").textContent;
+      addToCart(productName);
+    });
+  });
+
+  cartIcon.addEventListener("click", () => {
+    if (products.length > 0) {
+        window.open("cart.html")
+    } else {
+     window.open("cart.html")
+   }
+  });
+
+</script>
+<script src="product.js"></script>
+</body>
+</html>
